@@ -1,6 +1,4 @@
 import os
-
-import discord
 from dotenv import load_dotenv
 from discord import Intents, Client, Message
 from responses import get_responses
@@ -36,7 +34,7 @@ async def send_message(message: Message, user_message: str):
 
 @client.event
 async def on_ready():
-    print(f'{client.user} esta conectado')
+    print(f'{client.user} is connected')
 
 
 # Handling incoming messages
