@@ -54,7 +54,7 @@ async def on_message(message: Message):
     try:
         await send_message(message, user_message)
     except discord.errors.HTTPException as e:
-        print(f'[{channel}], No es un comando de respuesta')
+        print(f'[{channel}], No es un comando de respuesta {e}')
 
 
 # MAIN ENTRY
