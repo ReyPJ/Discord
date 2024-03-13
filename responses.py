@@ -53,4 +53,4 @@ def get_responses(user_input: str) -> str:
             ])
 
     elif lowered == 'runas':
-        return 'https://www.deeplol.gg/champions?version=13.24&tier=Challenger+'
+        return 'https://www.deeplol.gg/champions?version=14.5&tier=Challenger+'
