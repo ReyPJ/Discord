@@ -3,6 +3,7 @@
 **/CVS/*
 .cvsignore
 */.cvsignore
-.idea
+*/.env
 .env
+.idea
 *.env
