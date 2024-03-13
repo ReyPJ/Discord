@@ -1,0 +1,8 @@
+### CVS template
+/CVS/*
+**/CVS/*
+.cvsignore
+*/.cvsignore
+*.env
+.idea
+
