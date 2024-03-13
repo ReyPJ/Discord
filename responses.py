@@ -7,7 +7,7 @@ def get_responses(user_input: str) -> str:
     if lowered == 'gaeso':
         return choice(['Gaeso es puto', 'Mira Gaeso un turco', 'Como te van a hackear la cuenta Gaeso xD'])
 
-    elif lowered == 'benji' or lowered == 'pae' or lowered == 'mclovin':
+    elif lowered == 'benji' or (lowered == 'pae' or lowered == 'mclovin'):
         return choice(
             [
                 'pendejo',
