@@ -1,4 +1,5 @@
 from random import choice
+from urllib import response
 
 
 def get_responses(user_input: str) -> str:
@@ -50,3 +51,6 @@ def get_responses(user_input: str) -> str:
                 'Mclovin eres un pedo de rata',
                 'Mclovin no es mi culpa que aigas nacido negro'
             ])
+
+    elif lowered == 'runas':
+        return 'https://www.deeplol.gg/champions?version=13.24&tier=Challenger+'

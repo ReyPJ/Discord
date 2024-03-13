@@ -14,6 +14,7 @@ intents.message_content = True  # NOQA
 client: Client = Client(intents=intents)
 
 
+# Setup Insultos
 async def send_message(message: Message, user_message: str):
     if not user_message:
         print('(Mesage was empty because Intent were not enable probably)')
@@ -50,6 +51,9 @@ async def on_message(message: Message):
 
     print(f'[{channel}] {username}: "{user_message}"')
     await send_message(message, user_message)
+
+
+# LinkSender
 
 
 # MAIN ENTRY
