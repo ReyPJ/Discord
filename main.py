@@ -51,10 +51,8 @@ async def on_message(message: Message):
     channel: str = str(message.channel)
 
     print(f'[{channel}] {username}: "{user_message}"')
-    try:
+    if get_responses:
         await send_message(message, user_message)
-    except discord.errors.HTTPException as e:
-        print(f'[{channel}], No es un comando de respuesta {e}')
 
 
 # MAIN ENTRY
@@ -64,4 +62,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
