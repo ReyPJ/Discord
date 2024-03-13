@@ -51,8 +51,7 @@ async def on_message(message: Message):
     channel: str = str(message.channel)
 
     print(f'[{channel}] {username}: "{user_message}"')
-    if get_responses:
-        await send_message(message, user_message)
+    await send_message(message, user_message)
 
 
 # MAIN ENTRY
