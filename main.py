@@ -1,4 +1,6 @@
 import os
+
+import discord
 from dotenv import load_dotenv
 from discord import Intents, Client, Message
 from responses import get_responses
@@ -49,7 +51,10 @@ async def on_message(message: Message):
     channel: str = str(message.channel)
 
     print(f'[{channel}] {username}: "{user_message}"')
-    await send_message(message, user_message)
+    try:
+        await send_message(message, user_message)
+    except discord.errors.HTTPException as e:
+        print(f'[{channel}], No es un comando de respuesta')
 
 
 # MAIN ENTRY
